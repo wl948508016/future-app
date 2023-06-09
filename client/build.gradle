@@ -1,13 +1,45 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 apply from: '../android_library.gradle'
 
 android{
+
+    publishing {//这个不能少
+        singleVariant("release")
+    }
+
+    defaultConfig {
+        versionCode 2
+        versionName "1.0.1"
+    }
+
     buildFeatures {
         dataBinding = true
+    }
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.future.components'
+                artifactId = 'app'
+                version = '1.0.1'
+            }
+            debug(MavenPublication) {
+                // Applies the component for the debug build variant.
+                from components.debug
+
+                groupId = 'com.future.components'
+                artifactId = 'app'
+                version = '1.0.1'
+            }
+        }
     }
 }
 
