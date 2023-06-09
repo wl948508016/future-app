@@ -1,0 +1,17 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from: '../android_library.gradle'
+
+dependencies {
+    api project(path: ':client')
+    api retrofitDependancies.values()
+    //使用OKHttp拦截器
+    implementation okhttpDependancies.values()
+    implementation project(path: ':okhttp3-cookiejar')
+
+    testImplementation testDependancies.values()
+    androidTestImplementation androidTestDependancies.values()
+}

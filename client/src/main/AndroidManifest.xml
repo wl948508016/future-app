@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.future.components.client">
+    <application>
+        <provider
+            android:authorities="${applicationId}.ClientProvider"
+            android:name="com.future.components.client.ClientProvider"
+            android:exported="false"/>
+    </application>
+</manifest>

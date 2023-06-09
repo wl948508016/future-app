@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">智能瓦斯巡检系统</string>
+    <string name="login_app_name">智能瓦斯</string>
+    <string name="ccg_home">首页</string>
+    <string name="ccg_task">任务</string>
+    <string name="ccg_note">笔记</string>
+    <string name="ccg_my">我的</string>
+
+
+    <!--  login  -->
+    <string name="error_account_field_required">请输入用户名</string>
+    <string name="error_password_field_required">请输入密码</string>
+    <string name="error_verification_field_required">请输入验证码</string>
+    <string name="login_ing">正在登录......</string>
+    <string name="input_account">请输入账户</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_verification">请输入验证码</string>
+    <string name="login">登录</string>
+
+    <!--  login set up -->
+    <string name="set_up_server_ip">服务器地址:</string>
+    <string name="set_up_server_ip_hint">请输入服务器地址</string>
+    <string name="set_up_modify">修改</string>
+</resources>

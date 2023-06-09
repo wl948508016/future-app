@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/color_primary</item>
+        <item name="colorOnSecondary">@color/color_primary</item>
+
+<!--        <item name="android:windowBackground">@mipmap/background_common</item>-->
+        <item name="android:statusBarColor">@color/color_primary</item>
+    </style>
+
+    <!-- Splash theme -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/ic_splash_first</item>
+    </style>
+
+    <!--选中的样式，可以设置选择的字体颜色，这里只是为了改变选择时的字体大小-->
+    <style name="bottom_tab_title_active">
+        <item name="android:textSize">@dimen/future_text_12</item>
+    </style>
+
+    <!--没有选中的样式，导航默认的字体大小就是12sp-->
+    <style name="bottom_tab_title_inactive">
+        <item name="android:textSize">@dimen/future_text_10</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

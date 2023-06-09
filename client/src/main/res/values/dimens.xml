@@ -1,0 +1,100 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="future_title_bar_height">58dp</dimen>
+    <dimen name="future_status_bar_height">30dp</dimen>
+    <dimen name="future_dialog_width">300dp</dimen>
+    <dimen name="future_dialog_btn_width">150dp</dimen>
+
+    <dimen name="future_divider">0.5dp</dimen>
+<!--    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>-->
+<!--    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>-->
+
+<!--    <dimen name="design_bottom_navigation_margin">5dp</dimen>-->
+<!--    <dimen name="design_top_navigation_margin">5dp</dimen>-->
+
+    <!--  normal  -->
+    <dimen name="future_padding_horizontal">12dp</dimen>
+    <dimen name="future_cash_item_height">76dp</dimen>
+    <dimen name="future_task_item_height">62dp</dimen>
+    <dimen name="future_task_item_icon">41dp</dimen>
+    <dimen name="future_task_item_btn_height">30dp</dimen>
+    <dimen name="future_task_item_btn_width">52dp</dimen>
+    <dimen name="future_get_more_btn_padding">39dp</dimen>
+    <dimen name="future_get_more_btn_height">50dp</dimen>
+    <dimen name="future_exchange_formula_icon">12dp</dimen>
+    <dimen name="future_exchange_top_bg_height">287dp</dimen>
+    <dimen name="future_withdraw_top_bg_height">160dp</dimen>
+    <dimen name="future_withdraw_item_btn_height">30dp</dimen>
+    <dimen name="future_withdraw_item_btn_width">92dp</dimen>
+    <dimen name="future_dialog_paypal_height">36dp</dimen>
+    <dimen name="future_dialog_paypal_width">294dp</dimen>
+    <dimen name="future_dialog_finger_lottie_width">88dp</dimen>
+    <dimen name="future_dialog_halo_lottie_width">286dp</dimen>
+    <dimen name="future_dialog_halo_lottie_height">274dp</dimen>
+    <dimen name="future_dialog_guide_width">308dp</dimen>
+    <dimen name="future_dialog_guide_text_top">130dp</dimen>
+    <dimen name="future_guide_bottom">150dp</dimen>
+
+    <dimen name="future_text_8">8sp</dimen>
+    <dimen name="future_text_10">10sp</dimen>
+    <dimen name="future_text_11">11sp</dimen>
+    <dimen name="future_text_12">12sp</dimen>
+    <dimen name="future_text_13">13sp</dimen>
+    <dimen name="future_text_14">14sp</dimen>
+    <dimen name="future_text_15">15sp</dimen>
+    <dimen name="future_text_16">16sp</dimen>
+    <dimen name="future_text_17">17sp</dimen>
+    <dimen name="future_text_18">18sp</dimen>
+    <dimen name="future_text_19">19sp</dimen>
+    <dimen name="future_text_20">20sp</dimen>
+    <dimen name="future_text_22">22sp</dimen>
+    <dimen name="future_text_24">24sp</dimen>
+    <dimen name="future_text_40">40sp</dimen>
+
+    <!--  custom  -->
+    <dimen name="future_common_1_dp">1dp</dimen>
+    <dimen name="future_common_2_dp">2dp</dimen>
+    <dimen name="future_common_3_dp">3dp</dimen>
+    <dimen name="future_common_4_dp">4dp</dimen>
+    <dimen name="future_common_5_dp">5dp</dimen>
+    <dimen name="future_common_6_dp">6dp</dimen>
+    <dimen name="future_common_7_dp">7dp</dimen>
+    <dimen name="future_common_8_dp">8dp</dimen>
+    <dimen name="future_common_9_dp">9dp</dimen>
+    <dimen name="future_common_10_dp">10dp</dimen>
+    <dimen name="future_common_11_dp">11dp</dimen>
+    <dimen name="future_common_12_dp">12dp</dimen>
+    <dimen name="future_common_13_dp">13dp</dimen>
+    <dimen name="future_common_14_dp">14dp</dimen>
+    <dimen name="future_common_15_dp">15dp</dimen>
+    <dimen name="future_common_16_dp">16dp</dimen>
+    <dimen name="future_common_17_dp">17dp</dimen>
+    <dimen name="future_common_18_dp">18dp</dimen>
+    <dimen name="future_common_19_dp">19dp</dimen>
+    <dimen name="future_common_20_dp">20dp</dimen>
+    <dimen name="future_common_21_dp">21dp</dimen>
+    <dimen name="future_common_22_dp">22dp</dimen>
+    <dimen name="future_common_23_dp">23dp</dimen>
+    <dimen name="future_common_24_dp">24dp</dimen>
+    <dimen name="future_common_25_dp">25dp</dimen>
+    <dimen name="future_common_26_dp">26dp</dimen>
+    <dimen name="future_common_27_dp">27dp</dimen>
+    <dimen name="future_common_28_dp">28dp</dimen>
+    <dimen name="future_common_29_dp">29dp</dimen>
+    <dimen name="future_common_30_dp">30dp</dimen>
+    <dimen name="future_common_32_dp">32dp</dimen>
+    <dimen name="future_common_33_dp">33dp</dimen>
+    <dimen name="future_common_34_dp">34dp</dimen>
+    <dimen name="future_common_35_dp">35dp</dimen>
+    <dimen name="future_common_36_dp">36dp</dimen>
+    <dimen name="future_common_38_dp">38dp</dimen>
+    <dimen name="future_common_40_dp">40dp</dimen>
+    <dimen name="future_common_45_dp">45dp</dimen>
+    <dimen name="future_common_50_dp">50dp</dimen>
+    <dimen name="future_common_51_dp">51dp</dimen>
+    <dimen name="future_common_64_dp">64dp</dimen>
+    <dimen name="future_common_66_dp">66dp</dimen>
+    <dimen name="future_common_92_dp">92dp</dimen>
+    <dimen name="future_common_100_dp">100dp</dimen>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="measure_btn">45dp</dimen>
+    <dimen name="login_input_height">45dp</dimen>
+    <dimen name="login_input_margin">40dp</dimen>
+
+    <dimen name="banner_height">200dp</dimen>
+    <dimen name="home_menu_icon_height">40dp</dimen>
+    
+    <dimen name="task_divider">1dp</dimen>
+    <dimen name="create_task_remark_height">120dp</dimen>
+    
+    <dimen name="inspect_center_bg_width">140dp</dimen>
+    <dimen name="inspect_center_bg_height">160dp</dimen>
+    <dimen name="inspect_picture_item_height">80dp</dimen>
+
+    <dimen name="message_swipe_width">84dp</dimen>
+    <dimen name="message_swipe_height">33dp</dimen>
+
+</resources>

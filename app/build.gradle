@@ -1,0 +1,101 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+//构建时间
+static def generateTime() {
+    return new Date().format("yyyy_MM_dd_HH_mm", TimeZone.getTimeZone("GMT+08"))
+}
+
+android {
+    def androidVersions = rootProject.ext.android
+    def envVariables = rootProject.ext.envVariables
+
+    signingConfigs {
+        signing {
+            storeFile file(envVariables.storeFile)
+            storePassword envVariables.keyStorePassword
+            keyAlias = envVariables.keyAlias
+            keyPassword envVariables.keyPassword
+        }
+    }
+
+    compileSdk androidVersions.compileSdk
+
+    defaultConfig {
+        applicationId androidVersions.applicationId
+        minSdk androidVersions.minSdk
+        targetSdk androidVersions.targetSdk
+        versionCode androidVersions.versionCode
+        versionName androidVersions.versionName
+        multiDexEnabled true
+        signingConfig signingConfigs.signing
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding true
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            //判断是release还是debug版本
+            def buildType = variant.buildType.name
+            //获取渠道名称
+            //def channel = variant.productFlavors[0].name
+            //获取App名称
+            def packageLastName = applicationId.substring(applicationId.lastIndexOf(".") + 1, applicationId.length())
+            def ApkName = packageLastName.capitalize()
+            println(">>>>>>>>>>>>>packageLast：" + ApkName)
+            def outputFile = output.outputFile
+            println(">>>>>>>>>>>>>outputFile：" + outputFile)
+            // def fileName = ApkName + "_v${defaultConfig.versionName}_${buildType}_" + generateTime() + ".apk"
+            def fileName = ApkName + "_v${defaultConfig.versionName}_" + generateTime() + ".apk"
+            //def fileName = "职业健康" + "_v${defaultConfig.versionName}_" + generateTime() + ".apk"
+            outputFileName = fileName
+        }
+    }
+}
+
+dependencies {
+
+    api project(path: ':net')
+    implementation roomDependencies.values()
+    implementation glideDependencies.values()
+    implementation environments.values()
+    implementation commons.values()
+    implementation permissionDependencies.values()
+
+    annotationProcessor annotationProcessorsDependencies.values()
+    // To use Kotlin annotation processing tool (kapt)
+    kapt kaptDependancies.values()
+
+    debugImplementation leakDependencies.values()
+
+    testImplementation testDependancies.values()
+    androidTestImplementation androidTestDependancies.values()
+}

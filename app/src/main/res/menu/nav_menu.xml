@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_4k_24"
+        android:title="homeFragment"/>
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/ic_baseline_add_a_photo_24"
+        android:title="secondFragment"/>
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/ic_baseline_bedtime_24"
+        android:title="thirdFragment"/>
+</menu>

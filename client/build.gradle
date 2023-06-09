@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from: '../android_library.gradle'
+
+android{
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+dependencies {
+
+    api ktxDependancies.values()
+    api uiDependencies.values()
+    api gsonDependancies.values()
+
+    testImplementation testDependancies.values()
+    androidTestImplementation androidTestDependancies.values()
+}
